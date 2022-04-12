@@ -40,7 +40,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'C'");
         if (score > 0)
         {
             score--;
@@ -68,7 +68,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'B'");
         if (score > 0)
         {
             score--;
@@ -96,7 +96,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'A'");
         if (score > 0)
         {
             score--;
@@ -124,7 +124,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'B'");
         if (score > 0)
         {
             score--;
@@ -152,7 +152,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'D'");
         if (score > 0)
         {
             score--;
@@ -180,7 +180,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'A'");
         if (score > 0)
         {
             score--;
@@ -208,7 +208,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'B'");
         if (score > 0)
         {
             score--;
@@ -236,7 +236,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'D'");
         if (score > 0)
         {
             score--;
@@ -264,7 +264,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'C'");
         if (score > 0)
         {
             score--;
@@ -292,7 +292,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'B'");
         if (score > 0)
         {
             score--;
@@ -320,7 +320,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'D'");
         if (score > 0)
         {
             score--;
@@ -348,7 +348,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'A'");
         if (score > 0)
         {
             score--;
@@ -376,7 +376,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'C'");
         if (score > 0)
         {
             score--;
@@ -403,7 +403,7 @@ do {
     }
     else
     {
-        Console.WriteLine("Incorrect :(");
+        Console.WriteLine("Incorrect :( Correct answer was 'B'");
         if (score > 0)
         {
             score--;
@@ -415,11 +415,11 @@ do {
     //Loops the whole quiz if select 'y'
 
     Console.WriteLine("Thank you! You have reached the end.\n");
-    Console.WriteLine($"Your score is: ");
+    Console.WriteLine("Your score is: ");
     TotalScore = score;
     Console.WriteLine(TotalScore);
 
-    Console.WriteLine("\nIf you wish to try again type 'y' or type press any other key to exit. \n");
+    Console.WriteLine("\nIf you wish to try again, type 'y' or type press any other key to exit. \n");
     option= char.Parse(Console.ReadLine());
 
 } while (option == 'y' || option == 'Y');
