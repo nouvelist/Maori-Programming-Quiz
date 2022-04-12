@@ -412,7 +412,7 @@ do {
     //User has reached the end of the quiz
     //Shows the user their score
     //Asks user if they wish to repeat
-    //Loops the whole quiz if select 'y'
+    //Loops the whole quiz if user selects 'y'
 
     Console.WriteLine("Thank you! You have reached the end.\n");
     Console.WriteLine("Your score is: ");
