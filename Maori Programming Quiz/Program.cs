@@ -391,11 +391,11 @@ do {
     }
     //Question 14
 
-    Console.WriteLine("Which is the Maori names for NZ?");
-    Console.WriteLine("A: ");
-    Console.WriteLine("B: Kahurangi pouri");
-    Console.WriteLine("C: Mangu");
-    Console.WriteLine("D: Kahurangi marama");
+  Console.WriteLine("Which is the Maori names for NZ?");
+    Console.WriteLine("A: Aotera");
+    Console.WriteLine("B: Aortearoa");
+    Console.WriteLine("C: Aotea");
+    Console.WriteLine("D: Aotearoa");
     ans = Convert.ToChar(Console.ReadLine());
 
     while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
@@ -403,14 +403,14 @@ do {
         Console.WriteLine("Incorrect, please select only a,b c or d");
         ans = Convert.ToChar(Console.ReadLine());
     }
-    if (ans == 'b' || ans == 'B')
+    if (ans == 'D' || ans == 'd')
     {
         Console.WriteLine(" You're correct! Next Question:\n");
         score++;
     }
     else
     {
-        Console.WriteLine("Incorrect :( Correct answer was 'B'");
+        Console.WriteLine("Incorrect :( Correct answer was 'D' which means 'The land of the cloud'");
         if (score > 0)
         {
             score--;
