@@ -1,4 +1,4 @@
-﻿/*Introduction of the quiz
+/*Introduction of the quiz
  * Explains how many chances you get for each question
  * Number of quesions
  * Goes through Question's 1-15
@@ -20,7 +20,9 @@ char option;
 //question 1
 
 do {
-
+    Console.WriteLine("Level 1: Easy");
+    Console.WriteLine("Topic: Colours\n");
+    Console.WriteLine("Questions in the topic: 5\n");
     Console.WriteLine("What is the colour 'Yellow' in Te Reo Maori?");
     Console.WriteLine("A: Whero");
     Console.WriteLine("B: Karaka");
@@ -131,209 +133,16 @@ do {
         }
     }
 
-    //Question 6
+    //Question 5
 
-    Console.WriteLine("What is the colour 'Orange' in Te Reo Maori?");
-    Console.WriteLine("A: Kikorangi");
-    Console.WriteLine("B: Mangu");
-    Console.WriteLine("C: Kowhai");
-    Console.WriteLine("D: Karaka");
-    ans = Convert.ToChar(Console.ReadLine());
-
-    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
-    {
-        Console.WriteLine("Incorrect, please select only a,b c or d");
-        ans = Convert.ToChar(Console.ReadLine());
-    }
-    if (ans == 'd' || ans == 'D')
-    {
-        Console.WriteLine(" You're correct! Next Question:\n");
-        score++;
-    }
-    else
-    {
-        Console.WriteLine("Incorrect :( Correct answer was 'D'");
-        if (score > 0)
-        {
-            score--;
-        }
-    }
-
-    //Question 7
-
-    Console.WriteLine("What is the colour 'Purple' in Te Reo Maori?");
-    Console.WriteLine("A: Waiporoporo");
-    Console.WriteLine("B: Parauri");
-    Console.WriteLine("C: Whero");
-    Console.WriteLine("D: Mangu");
-    ans = Convert.ToChar(Console.ReadLine());
-
-    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
-    {
-        Console.WriteLine("Incorrect, please select only a,b c or d");
-        ans = Convert.ToChar(Console.ReadLine());
-    }
-    if (ans == 'A' || ans == 'a')
-    {
-        Console.WriteLine(" You're correct! Next Question:\n");
-        score++;
-    }
-    else
-    {
-        Console.WriteLine("Incorrect :( Correct answer was 'A'");
-        if (score > 0)
-        {
-            score--;
-        }
-    }
-
-    //Question 8
-
-    Console.WriteLine("What is color 'Pink' in Te Reo Maori?");
-    Console.WriteLine("A: Parauri");
-    Console.WriteLine("B: Māwhero");
-    Console.WriteLine("C: Kakara");
-    Console.WriteLine("D: Kowhai");
-    ans = Convert.ToChar(Console.ReadLine());
-
-    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
-    {
-        Console.WriteLine("Incorrect, please select only a,b c or d");
-        ans = Convert.ToChar(Console.ReadLine());
-    }
-    if (ans == 'b' || ans == 'B')
-    {
-        Console.WriteLine(" You're correct! Next Question:\n");
-        score++;
-    }
-    else
-    {
-        Console.WriteLine("Incorrect :( Correct answer was 'B'");
-        if (score > 0)
-        {
-            score--;
-        }
-    }
-
-    //Question 9
-
-    Console.WriteLine("What is color 'White' in Te Reo Maori?");
-    Console.WriteLine("A: Mangu");
-    Console.WriteLine("B: Kakariki");
-    Console.WriteLine("C: Whero");
-    Console.WriteLine("D: Ma");
-    ans = Convert.ToChar(Console.ReadLine());
-
-    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
-    {
-        Console.WriteLine("Incorrect, please select only a,b c or d");
-        ans = Convert.ToChar(Console.ReadLine());
-    }
-    if (ans == 'd' || ans == 'D')
-    {
-        Console.WriteLine(" You're correct! Next Question:\n");
-        score++;
-    }
-    else
-    {
-        Console.WriteLine("Incorrect :( Correct answer was 'D'");
-        if (score > 0)
-        {
-            score--;
-        }
-    }
-
-    //Question 10
-
-    Console.WriteLine("What is color 'Gray' in Te Reo Maori?");
-    Console.WriteLine("A: Kākaka");
-    Console.WriteLine("B: Waiporoporo");
-    Console.WriteLine("C: Hina");
-    Console.WriteLine("D: Whero");
-    ans = Convert.ToChar(Console.ReadLine());
-
-    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
-    {
-        Console.WriteLine("Incorrect, please select only a,b c or d");
-        ans = Convert.ToChar(Console.ReadLine());
-    }
-    if (ans == 'C' || ans == 'c')
-    {
-        Console.WriteLine(" You're correct! Next Question:\n");
-        score++;
-    }
-    else
-    {
-        Console.WriteLine("Incorrect :( Correct answer was 'C'");
-        if (score > 0)
-        {
-            score--;
-        }
-    }
-
-    //Question 11
-
-    Console.WriteLine("What is color 'Blue' in Te Reo Maori?");
-    Console.WriteLine("A: Ma");
-    Console.WriteLine("B: Kikorangi");
-    Console.WriteLine("C: Kakariki");
-    Console.WriteLine("D: Mangu");
-    ans = Convert.ToChar(Console.ReadLine());
-
-    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
-    {
-        Console.WriteLine("Incorrect, please select only a,b c or d");
-        ans = Convert.ToChar(Console.ReadLine());
-    }
-    if (ans == 'b' || ans == 'B')
-    {
-        Console.WriteLine(" You're correct! Next Question:\n");
-        score++;
-    }
-    else
-    {
-        Console.WriteLine("Incorrect :( Correct answer was 'B'");
-        if (score > 0)
-        {
-            score--;
-        }
-    }
-
-    //Question 12
-
-    Console.WriteLine("What is color 'Turquoise' in Te Reo Maori?");
-    Console.WriteLine("A: Whero");
-    Console.WriteLine("B: Ma");
-    Console.WriteLine("C: Karaka");
-    Console.WriteLine("D: Karekau");
-    ans = Convert.ToChar(Console.ReadLine());
-
-    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
-    {
-        Console.WriteLine("Incorrect, please select only a,b c or d");
-        ans = Convert.ToChar(Console.ReadLine());
-    }
-    if (ans == 'd' || ans == 'D')
-    {
-        Console.WriteLine(" You're correct! Next Question:\n");
-        score++;
-    }
-    else
-    {
-        Console.WriteLine("Incorrect :( Correct answer was 'D'");
-        if (score > 0)
-        {
-            score--;
-        }
-    }
-
-    //Question 13
-
-    Console.WriteLine("What is color 'Magenta' in Te Reo Maori?");
-    Console.WriteLine("A: Makurakura");
-    Console.WriteLine("B: Whero");
-    Console.WriteLine("C: Kakariki");
-    Console.WriteLine("D: Kowhai");
+    Console.WriteLine("Level 2: Hard");
+    Console.WriteLine("Topic: Animals\n");
+    Console.WriteLine("Questions in the topic: 5\n");
+    Console.WriteLine("What is 'dog' in Te Maori?");
+    Console.WriteLine("A: Kuri");
+    Console.WriteLine("B: Kau");
+    Console.WriteLine("C: Wheke");
+    Console.WriteLine("D: Poaka");
     ans = Convert.ToChar(Console.ReadLine());
 
     while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
@@ -355,13 +164,13 @@ do {
         }
     }
 
-    //Question 14
+    //Question 6
 
-    Console.WriteLine("What is color 'Lime Green' in Te Reo Maori?");
-    Console.WriteLine("A: Kahurangi marama");
-    Console.WriteLine("B: Ma");
-    Console.WriteLine("C: Kotakota kākāriki");
-    Console.WriteLine("D: Kowhai");
+    Console.WriteLine("What is 'cat' in Te Reo Maori?");
+    Console.WriteLine("A: Reme");
+    Console.WriteLine("B: Pepe");
+    Console.WriteLine("C: Kuri");
+    Console.WriteLine("D: Wheke");
     ans = Convert.ToChar(Console.ReadLine());
 
     while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
@@ -382,10 +191,208 @@ do {
             score--;
         }
     }
-    //Question 15
 
-    Console.WriteLine("What is color 'Dark Blue' in Te Reo Maori?");
-    Console.WriteLine("A: Kakariki pouri");
+    //Question 7
+
+    Console.WriteLine("What is 'horse' in Te Reo Maori?");
+    Console.WriteLine("A: Reme");
+    Console.WriteLine("B: Hōiho");
+    Console.WriteLine("C: Wheke");
+    Console.WriteLine("D: Kau");
+    ans = Convert.ToChar(Console.ReadLine());
+
+    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
+    {
+        Console.WriteLine("Incorrect, please select only a,b c or d");
+        ans = Convert.ToChar(Console.ReadLine());
+    }
+    if (ans == 'b' || ans == 'B')
+    {
+        Console.WriteLine(" You're correct! Next Question:\n");
+        score++;
+    }
+    else
+    {
+        Console.WriteLine("Incorrect :( Correct answer was 'B'");
+        if (score > 0)
+        {
+            score--;
+        }
+    }
+
+    //Question 8
+
+    Console.WriteLine("What is 'cow' in Te Reo Maori?");
+    Console.WriteLine("A: Pepe");
+    Console.WriteLine("B: Kiore");
+    Console.WriteLine("C: Wheke");
+    Console.WriteLine("D: Kau");
+    ans = Convert.ToChar(Console.ReadLine());
+
+    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
+    {
+        Console.WriteLine("Incorrect, please select only a,b c or d");
+        ans = Convert.ToChar(Console.ReadLine());
+    }
+    if (ans == 'd' || ans == 'D')
+    {
+        Console.WriteLine(" You're correct! Next Question:\n");
+        score++;
+    }
+    else
+    {
+        Console.WriteLine("Incorrect :( Correct answer was 'D'");
+        if (score > 0)
+        {
+            score--;
+        }
+    }
+
+    //Question 9
+
+    Console.WriteLine("What is 'lamb' in Te Reo Maori?");
+    Console.WriteLine("A: Kuri");
+    Console.WriteLine("B: Kau");
+    Console.WriteLine("C: Reme");
+    Console.WriteLine("D: Kiore");
+    ans = Convert.ToChar(Console.ReadLine());
+
+    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
+    {
+        Console.WriteLine("Incorrect, please select only a,b c or d");
+        ans = Convert.ToChar(Console.ReadLine());
+    }
+    if (ans == 'a' || ans == 'A')
+    {
+        Console.WriteLine(" You're correct! Next Question:\n");
+        score++;
+    }
+    else
+    {
+        Console.WriteLine("Incorrect :( Correct answer was 'A'");
+        if (score > 0)
+        {
+            score--;
+        }
+    }
+
+    //Question 10
+    
+    Console.WriteLine("What is 'seal' in Te Reo Maori?");
+    Console.WriteLine("A: Reme");
+    Console.WriteLine("B: Popoiangore");
+    Console.WriteLine("C: Hōiho");
+    Console.WriteLine("D: Kau");
+    ans = Convert.ToChar(Console.ReadLine());
+
+    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
+    {
+        Console.WriteLine("Incorrect, please select only a,b c or d");
+        ans = Convert.ToChar(Console.ReadLine());
+    }
+    if (ans == 'b' || ans == 'B')
+    {
+        Console.WriteLine(" You're correct! Next Question:\n");
+        score++;
+    }
+    else
+    {
+        Console.WriteLine("Incorrect :( Correct answer was 'B'");
+        if (score > 0)
+        {
+            score--;
+        }
+    }
+
+    //Question 11
+
+    Console.WriteLine("Level 3: Expert");
+    Console.WriteLine("Topic: New Zealand Trivia\n");
+    Console.WriteLine("What colours are on the NZ flag?");
+    Console.WriteLine("A: Whero, Kowhai, Ma");
+    Console.WriteLine("B: Karekau, Ma, Whero");
+    Console.WriteLine("C: Karaka, Wheroma, Mangu");
+    Console.WriteLine("D: Mangu, Whero, Ma");
+    ans = Convert.ToChar(Console.ReadLine());
+
+    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
+    {
+        Console.WriteLine("Incorrect, please select only a,b c or d");
+        ans = Convert.ToChar(Console.ReadLine());
+    }
+    if (ans == 'A' || ans == 'a')
+    {
+        Console.WriteLine(" You're correct! Next Question:\n");
+        score++;
+    }
+    else
+    {
+        Console.WriteLine("Incorrect :( Correct answer was 'A'");
+        if (score > 0)
+        {
+            score--;
+        }
+    }
+
+    //Question 12
+
+    Console.WriteLine("What was one of the first animals brought to NZ?");
+    Console.WriteLine("A: Kau");
+    Console.WriteLine("B: Ngeru");
+    Console.WriteLine("C: Kuri");
+    Console.WriteLine("D: Kiore");
+    ans = Convert.ToChar(Console.ReadLine());
+
+    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
+    {
+        Console.WriteLine("Incorrect, please select only a,b c or d");
+        ans = Convert.ToChar(Console.ReadLine());
+    }
+    if (ans == 'b' || ans == 'B')
+    {
+        Console.WriteLine(" You're correct! Next Question:\n");
+        score++;
+    }
+    else
+    {
+        Console.WriteLine("Incorrect :( Correct answer was 'B' a.k.a cat");
+        if (score > 0)
+        {
+            score--;
+        }
+    }
+
+    //Question 13
+
+    Console.WriteLine("What is the capital of NZ?");
+    Console.WriteLine("A: Wellington");
+    Console.WriteLine("B: Auckland");
+    Console.WriteLine("C: Christchurch");
+    Console.WriteLine("D: Hamilton");
+    ans = Convert.ToChar(Console.ReadLine());
+
+    while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
+    {
+        Console.WriteLine("Incorrect, please select only a,b c or d");
+        ans = Convert.ToChar(Console.ReadLine());
+    }
+    if (ans == 'a' || ans == 'A')
+    {
+        Console.WriteLine(" You're correct! Next Question:\n");
+        score++;
+    }
+    else
+    {
+        Console.WriteLine("Incorrect :( Correct answer was 'A'");
+        if (score > 0)
+        {
+            score--;
+        }
+    }
+    //Question 14
+
+    Console.WriteLine("Which is the Maori names for NZ?");
+    Console.WriteLine("A: ");
     Console.WriteLine("B: Kahurangi pouri");
     Console.WriteLine("C: Mangu");
     Console.WriteLine("D: Kahurangi marama");
