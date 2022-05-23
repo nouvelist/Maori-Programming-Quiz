@@ -37,7 +37,7 @@ do {
     }
     if (ans == 'c' || ans == 'C')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
@@ -65,7 +65,7 @@ do {
     }
     if (ans == 'b' || ans == 'B')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
@@ -93,7 +93,7 @@ do {
     }
     if (ans == 'a' || ans == 'A')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
@@ -121,7 +121,7 @@ do {
     }
     if (ans == 'B' || ans == 'b')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
@@ -135,7 +135,7 @@ do {
 
     //Question 5
 
-    Console.WriteLine("Level 2: Hard");
+    Console.WriteLine("\nLevel 2: Hard");
     Console.WriteLine("Topic: Animals\n");
     Console.WriteLine("Questions in the topic: 5\n");
     Console.WriteLine("What is 'dog' in Te Maori?");
@@ -152,7 +152,7 @@ do {
     }
     if (ans == 'a' || ans == 'A')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
@@ -169,7 +169,7 @@ do {
     Console.WriteLine("What is 'cat' in Te Reo Maori?");
     Console.WriteLine("A: Reme");
     Console.WriteLine("B: Pepe");
-    Console.WriteLine("C: Kuri");
+    Console.WriteLine("C: Ngeru");
     Console.WriteLine("D: Wheke");
     ans = Convert.ToChar(Console.ReadLine());
 
@@ -180,7 +180,7 @@ do {
     }
     if (ans == 'c' || ans == 'C')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
@@ -208,7 +208,7 @@ do {
     }
     if (ans == 'b' || ans == 'B')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
@@ -236,7 +236,7 @@ do {
     }
     if (ans == 'd' || ans == 'D')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
@@ -262,14 +262,14 @@ do {
         Console.WriteLine("Incorrect, please select only a,b c or d");
         ans = Convert.ToChar(Console.ReadLine());
     }
-    if (ans == 'a' || ans == 'A')
+    if (ans == 'c' || ans == 'C')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
     {
-        Console.WriteLine("Incorrect :( Correct answer was 'A'");
+        Console.WriteLine("Incorrect :( Correct answer was 'C'");
         if (score > 0)
         {
             score--;
@@ -280,9 +280,9 @@ do {
     
     Console.WriteLine("What is 'seal' in Te Reo Maori?");
     Console.WriteLine("A: Reme");
-    Console.WriteLine("B: Popoiangore");
+    Console.WriteLine("B: Kau");
     Console.WriteLine("C: Hōiho");
-    Console.WriteLine("D: Kau");
+    Console.WriteLine("D: Popoiangore");
     ans = Convert.ToChar(Console.ReadLine());
 
     while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
@@ -290,14 +290,14 @@ do {
         Console.WriteLine("Incorrect, please select only a,b c or d");
         ans = Convert.ToChar(Console.ReadLine());
     }
-    if (ans == 'b' || ans == 'B')
+    if (ans == 'd' || ans == 'D')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
     {
-        Console.WriteLine("Incorrect :( Correct answer was 'B'");
+        Console.WriteLine("Incorrect :( Correct answer was 'D'");
         if (score > 0)
         {
             score--;
@@ -306,11 +306,11 @@ do {
 
     //Question 11
 
-    Console.WriteLine("Level 3: Expert");
+    Console.WriteLine("\nLevel 3: Expert");
     Console.WriteLine("Topic: New Zealand Trivia\n");
     Console.WriteLine("What colours are on the NZ flag?");
     Console.WriteLine("A: Whero, Kowhai, Ma");
-    Console.WriteLine("B: Karekau, Ma, Whero");
+    Console.WriteLine("B: Kahurangi, Ma, Whero");
     Console.WriteLine("C: Karaka, Wheroma, Mangu");
     Console.WriteLine("D: Mangu, Whero, Ma");
     ans = Convert.ToChar(Console.ReadLine());
@@ -320,14 +320,14 @@ do {
         Console.WriteLine("Incorrect, please select only a,b c or d");
         ans = Convert.ToChar(Console.ReadLine());
     }
-    if (ans == 'A' || ans == 'a')
+    if (ans == 'B' || ans == 'b')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
     {
-        Console.WriteLine("Incorrect :( Correct answer was 'A'");
+        Console.WriteLine("Incorrect :( Correct answer was 'B'");
         if (score > 0)
         {
             score--;
@@ -350,12 +350,12 @@ do {
     }
     if (ans == 'b' || ans == 'B')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
     {
-        Console.WriteLine("Incorrect :( Correct answer was 'B' a.k.a cat");
+        Console.WriteLine("Incorrect :( Correct answer was 'B'! Cats and Stoats were the first to come to NZ\n");
         if (score > 0)
         {
             score--;
@@ -378,7 +378,7 @@ do {
     }
     if (ans == 'a' || ans == 'A')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
@@ -391,7 +391,7 @@ do {
     }
     //Question 14
 
-  Console.WriteLine("Which is the Maori names for NZ?");
+    Console.WriteLine("Which is the Maori names for NZ?");
     Console.WriteLine("A: Aotera");
     Console.WriteLine("B: Aortearoa");
     Console.WriteLine("C: Aotea");
@@ -405,7 +405,7 @@ do {
     }
     if (ans == 'D' || ans == 'd')
     {
-        Console.WriteLine(" You're correct! Next Question:\n");
+        Console.WriteLine("You're correct! Next Question:\n");
         score++;
     }
     else
