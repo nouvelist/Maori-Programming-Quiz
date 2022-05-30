@@ -1,5 +1,5 @@
 /*Introduction of the quiz
- * Explains how many chances you get for each question
+ * Explains how many chances you can get per question
  * Number of quesions
  * Goes through Question's 1-15
  * Presents score
@@ -9,6 +9,7 @@
 Console.WriteLine("Welcome To My Te Reo Maori Quiz!\n");
 
 Console.WriteLine("This quiz will help you improve your knowledge on Te Reo Maori colours!");
+Console.WriteLine("You will only get no chances if you get the answer wrong")
 Console.WriteLine("There will be 15 questions in total, best of luck!\n\n");
 
 //variables 
