@@ -1,16 +1,16 @@
 /*Introduction of the quiz
  * Explains how many chances you can get per question
- * Number of quesions
- * Goes through Question's 1-15
- * Presents score
- * Wishes the user goodbye
+ * Each topic contains 5 questions
+ * Displays users score
+ * Asks user if they wish to retry
+ * If typed 'y' program will loop itself
  */
 
 Console.WriteLine("Welcome To My Te Reo Maori Quiz!\n");
 
 Console.WriteLine("This quiz will help you improve your knowledge on Te Reo Maori colours!");
 Console.WriteLine("You will only get no chances if you get the answer wrong");
-Console.WriteLine("Select a level on your chosing, by either pressing 1, 2, or 3 on the keyboard\n\n");
+Console.WriteLine("Each topic contains 5 questions");
 
 //variables 
 int score = 0;
@@ -78,7 +78,7 @@ do {
             Console.WriteLine("Incorrect :( Correct answer was 'C'");
             if (score > 0)
             {
-                score--;
+           
             }
         }
 
@@ -106,7 +106,7 @@ do {
             Console.WriteLine("Incorrect :( Correct answer was 'B'");
             if (score > 0)
             {
-                score--;
+            
             }
         }
 
@@ -134,7 +134,7 @@ do {
             Console.WriteLine("Incorrect :( Correct answer was 'A'");
             if (score > 0)
             {
-                score--;
+             
             }
         }
 
@@ -162,10 +162,10 @@ do {
             Console.WriteLine("Incorrect :( Correct answer was 'B'");
             if (score > 0)
             {
-                score--;
+            
             }         
         }
-        //User has reached the end of the quiz
+        //User has reached the end of the topic
         //Shows the user their score
         //Asks user if they wish to repeat
         //Loops the whole quiz if user selects 'y'
@@ -173,7 +173,7 @@ do {
         Console.WriteLine("Thank you! You have reached the end.\n");
         Console.WriteLine("Your score is: ");
         TotalScore = score;
-        Console.WriteLine(TotalScore);
+        Console.WriteLine($"{TotalScore}/5");
     
     Console.WriteLine("\nIf you wish to try again, type 'y' or type press any other key to exit. \n");
     option= char.Parse(Console.ReadLine());
@@ -207,7 +207,7 @@ do {
             Console.WriteLine("Incorrect :( Correct answer was 'A'");
             if (score > 0)
             {
-                score--;
+            
             }
         }
 
@@ -235,7 +235,7 @@ do {
             Console.WriteLine("Incorrect :( Correct answer was 'C'");
             if (score > 0)
             {
-                score--;
+          
             }
         }
 
@@ -263,7 +263,7 @@ do {
             Console.WriteLine("Incorrect :( Correct answer was 'B'");
             if (score > 0)
             {
-                score--;
+             
             }
         }
 
@@ -291,7 +291,7 @@ do {
             Console.WriteLine("Incorrect :( Correct answer was 'D'");
             if (score > 0)
             {
-                score--;
+            
             }
         }
         
@@ -319,10 +319,10 @@ do {
             Console.WriteLine("Incorrect :( Correct answer was 'D'");
             if (score > 0)
             {
-                score--;
+             
             }
         }
-        //User has reached the end of the quiz
+        //User has reached the end of the topic
         //Shows the user their score
         //Asks user if they wish to repeat
         //Loops the whole quiz if user selects 'y'
@@ -330,7 +330,7 @@ do {
         Console.WriteLine("Thank you! You have reached the end.\n");
         Console.WriteLine("Your score is: ");
         TotalScore = score;
-        Console.WriteLine(TotalScore);
+        Console.WriteLine($"{TotalScore}/5");
     
         Console.WriteLine("\nIf you wish to try again, type 'y' or type press any other key to exit. \n");
         option= char.Parse(Console.ReadLine());
@@ -362,7 +362,7 @@ do {
             Console.WriteLine("Incorrect :( Correct answer was 'B'");
             if (score > 0)
             {
-                score--;
+            
             }
         }
 
@@ -390,7 +390,7 @@ do {
             Console.WriteLine("Incorrect :( Correct answer was 'B'! Cats and Stoats were the first to come to NZ\n");
             if (score > 0)
             {
-                score--;
+            
             }
         }
 
@@ -418,7 +418,7 @@ do {
             Console.WriteLine("Incorrect :( Correct answer was 'A'");
             if (score > 0)
             {
-                score--;
+               
             }
         }
         //Question 14
@@ -448,9 +448,34 @@ do {
                 score--;
             }
         }
+        
+        //question 15
+        Console.WriteLine("What is the most popular Maori myth?");
+        Console.WriteLine("A: Māui and the sun");
+        Console.WriteLine("B: How Māui slowed down the sun");
+        Console.WriteLine("C: The North Island is the Fish that Māui Caught");
+        Console.WriteLine("D: How Māui found his father and the magic jawbone");
+        ans = Convert.ToChar(Console.ReadLine());
 
+        while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
+        {
+            Console.WriteLine("Incorrect, please select only a,b c or d");
+            ans = Convert.ToChar(Console.ReadLine());
+        }
+        if (ans == 'c' || ans == 'C')
+        {
+            Console.WriteLine("You're correct! Next Question:\n");
+            score++;
+        }
+        else
+        {
+            Console.WriteLine("Incorrect :( Correct answer was 'C'");
+            if (score > 0)
+            {
+            }
+        }
 
-        //User has reached the end of the quiz
+        //User has reached the end of the topic/quiz
         //Shows the user their score
         //Asks user if they wish to repeat
         //Loops the whole quiz if user selects 'y'
@@ -458,7 +483,7 @@ do {
         Console.WriteLine("Thank you! You have reached the end.\n");
         Console.WriteLine("Your score is: ");
         TotalScore = score;
-        Console.WriteLine(TotalScore);
+        Console.WriteLine($"{TotalScore}/5");
     
     Console.WriteLine("\nIf you wish to try again, type 'y' or type press any other key to exit. \n");
     option= char.Parse(Console.ReadLine());
