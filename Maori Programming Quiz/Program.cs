@@ -1,8 +1,9 @@
 /*Introduction of the quiz
+ * Program asks user to pick a level 
  * Explains how many chances you can get per question
  * Each topic contains 5 questions
- * Displays users score
- * Asks user if they wish to retry
+ * Once the questions are answer, their score will be displayed
+ * Program will ask the user if they wish to retry
  * If typed 'y' program will loop itself
  */
 
@@ -21,9 +22,9 @@ int option;
 //question 1
 
 do {
-    Console.WriteLine("\t->Level 1");
-    Console.WriteLine("\n\t->Level 2");
-    Console.WriteLine("\n\t->Level 3");
+    Console.WriteLine("\t->Level 1 : Easy");
+    Console.WriteLine("\n\t->Level 2 : Hard");
+    Console.WriteLine("\n\t->Level 3 : Expert");
     Console.WriteLine("\nPlease input the number of the level of your choosing!");
 
     while(!int.TryParse(Console.ReadLine(), out option) || option <= 0 || option >= 4)
