@@ -10,7 +10,7 @@ Console.WriteLine("Welcome To My Te Reo Maori Quiz!\n");
 
 Console.WriteLine("This quiz will help you improve your knowledge on Te Reo Maori colours!");
 Console.WriteLine("You will only get no chances if you get the answer wrong");
-Console.WriteLine("There will be 15 questions in total, best of luck!\n\n");
+Console.WriteLine("Select a level on your chosing, by either pressing 1, 2, or 3 on the keyboard\n\n");
 
 //variables 
 int score = 0;
@@ -163,8 +163,20 @@ do {
             if (score > 0)
             {
                 score--;
-            }
+            }         
         }
+        //User has reached the end of the quiz
+        //Shows the user their score
+        //Asks user if they wish to repeat
+        //Loops the whole quiz if user selects 'y'
+
+        Console.WriteLine("Thank you! You have reached the end.\n");
+        Console.WriteLine("Your score is: ");
+        TotalScore = score;
+        Console.WriteLine(TotalScore);
+    
+    Console.WriteLine("\nIf you wish to try again, type 'y' or type press any other key to exit. \n");
+    option= char.Parse(Console.ReadLine());
     }
 
     void Level2()
@@ -282,37 +294,9 @@ do {
                 score--;
             }
         }
-
-        //Question 9
-
-        Console.WriteLine("What is 'lamb' in Te Reo Maori?");
-        Console.WriteLine("A: Kuri");
-        Console.WriteLine("B: Kau");
-        Console.WriteLine("C: Reme");
-        Console.WriteLine("D: Kiore");
-        ans = Convert.ToChar(Console.ReadLine());
-
-        while (ans != 'a' && ans != 'A' && ans != 'b' && ans != 'B' && ans != 'C' && ans != 'c' && ans != 'd' && ans != 'D')
-        {
-            Console.WriteLine("Incorrect, please select only a,b c or d");
-            ans = Convert.ToChar(Console.ReadLine());
-        }
-        if (ans == 'c' || ans == 'C')
-        {
-            Console.WriteLine("You're correct! Next Question:\n");
-            score++;
-        }
-        else
-        {
-            Console.WriteLine("Incorrect :( Correct answer was 'C'");
-            if (score > 0)
-            {
-                score--;
-            }
-        }
-
+        
         //Question 10
-    }
+    
         Console.WriteLine("What is 'seal' in Te Reo Maori?");
         Console.WriteLine("A: Reme");
         Console.WriteLine("B: Kau");
@@ -338,7 +322,19 @@ do {
                 score--;
             }
         }
+        //User has reached the end of the quiz
+        //Shows the user their score
+        //Asks user if they wish to repeat
+        //Loops the whole quiz if user selects 'y'
+
+        Console.WriteLine("Thank you! You have reached the end.\n");
+        Console.WriteLine("Your score is: ");
+        TotalScore = score;
+        Console.WriteLine(TotalScore);
     
+        Console.WriteLine("\nIf you wish to try again, type 'y' or type press any other key to exit. \n");
+        option= char.Parse(Console.ReadLine());
+    }
         void Level3()
     {
         //Question 11
@@ -463,8 +459,8 @@ do {
         Console.WriteLine("Your score is: ");
         TotalScore = score;
         Console.WriteLine(TotalScore);
-    }
+    
     Console.WriteLine("\nIf you wish to try again, type 'y' or type press any other key to exit. \n");
     option= char.Parse(Console.ReadLine());
-
+   }
 } while (option == 'y' || option == 'Y');
